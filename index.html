@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <div class="contact-us">
+    <h1 class="my-4 text-2xl text-sky-900 text-center">Contact Us</h3>
+    <form action="" class="mx-auto w-1/2 border-double border-4 rounded-md border-slate-400 py-4">
+        <h3><label for="name" class="form-title">Name<span class="text-red-600 text-sm ml-3">*必填</span></label></h3>
+        <input type="text" id="name" class="form-input" placeholder="王大明">
+        <h3><label for="email" class="form-title">Email<span class="text-red-600 text-sm ml-3">*必填</span></label></h3>
+        <input type="text" id="email" class="form-input" placeholder="example@example.com">
+        <h3><label for="phone" class="form-title">Phone</label></h3>
+        <input type="text" id="phone" class="form-input" placeholder="0912345678">
+        <h3><label for="message" class="form-title">Message<span class="text-red-600 text-sm ml-3">*必填</span></label></h3>
+        <textarea id="message" type="text-area" class="form-input" placeholder="我想說..."></textarea>
+        <button class="btn-send text-center" type="submit">送出</button>
+    </form>
+  </div>
+</body>
+
+</html>
+
+
+<style>
+  .form-title {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .form-input {
+    margin-left: 50px;
+    border: 2px solid rgba(118, 116, 116, 0.7);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 85%;
+    line-height: 36px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  #message {
+    height: 260px;
+  }
+  .btn-send {
+    width: 120px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(43, 76, 193);
+    color: beige;
+    margin-left: 33rem;
+  }
+  .btn-send:hover {
+    background-color: rgb(105, 132, 227);
+  }
+</style>
